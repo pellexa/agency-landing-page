@@ -1,5 +1,7 @@
 # Agency landing page
 
+### [Deploy](https://agency-lp.netlify.app/)
+
 ### Run Tailwind
 
 ```sh
