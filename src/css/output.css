@@ -552,6 +552,18 @@ video {
   display: none;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
+.w-\[99px\] {
+  width: 99px;
+}
+
+.w-\[98px\] {
+  width: 98px;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -620,6 +632,14 @@ video {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-10 {
+    height: 2.5rem;
+  }
+
+  .lg\:w-\[123px\] {
+    width: 123px;
   }
 
   .lg\:px-6 {
