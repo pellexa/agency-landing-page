@@ -8,15 +8,15 @@ module.exports = {
       sans: ['"Clash Grotesk"', "sans-serif"],
     },
     fontSize: {
-      sm: { "0.875rem": { fontWeight: 400 } }, // 14px
-      base: { "1rem": { fontWeight: 500 } }, // 16px
-      lg: { "1.125rem": { fontWeight: 400 } }, // 18px
-      xl: { "1.5rem": { fontWeight: 400 } }, // 24px
-      "2xl": { "2rem": { fontWeight: 400 } }, // 32px
-      "3xl": { "2rem": { fontWeight: 700 } }, // 32px
-      "4xl": { "3rem": { fontWeight: 700 } }, // 48px
-      "5xl": { "3.5rem": { fontWeight: 700 } }, // 56px
-      "6xl": { "6rem": { fontWeight: 700 } }, // 96px
+      sm: ["0.875rem", { lineHeight: "1.25rem", fontWeight: 400 }], // 14px/20
+      base: ["1rem", { lineHeight: "1.5rem", fontWeight: 500 }], // 16px/24
+      lg: ["1.125rem", { lineHeight: "2rem", fontWeight: 400 }], // 18px/32
+      xl: ["1.5rem", { lineHeight: "2rem", fontWeight: 400 }], // 24px/32
+      "2xl": ["2rem", { lineHeight: "2.5rem", fontWeight: 400 }], // 32px/40
+      "3xl": ["2rem", { lineHeight: "2.5rem", fontWeight: 700 }], // 32px/40
+      "4xl": ["3rem", { lineHeight: "6.25rem", fontWeight: 700 }], // 48px/100
+      "5xl": ["3.5rem", { lineHeight: "8.3125rem", fontWeight: 700 }], // 56px/133
+      "6xl": ["6rem", { lineHeight: "7.5rem", fontWeight: 700 }], // 96px/120
     },
     screens: {
       lg: "1440px", // => @media (min-width: 1440px) { ... } 2xl
@@ -33,18 +33,9 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({ addComponents, theme }) {
-      addComponents({
-        ".btn": {
-          color: theme("colors.tertiary"),
-          backgroundColor: theme("colors.primary"),
-          padding: `${theme("spacing.4")} ${theme("spacing.8")}`,
-        },
-      });
-    }),
-
     plugin(function ({ addBase, theme }) {
       addBase({
+        html: { fontSize: "16px" },
         h1: { fontSize: theme("fontSize.6xl") },
         h2: { fontSize: theme("fontSize.5xl") },
         h3: { fontSize: theme("fontSize.4xl") },
