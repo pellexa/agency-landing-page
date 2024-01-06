@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-primary font-medium text-tertiary transition-colors hover:bg-primary/85 active:bg-primary/75 focus-visible:ring-2 outline-none;
+  }
+
+  .btn-md {
+    @apply h-14 px-4;
+  }
+
+  .btn-sm {
+    @apply md:h-10 md:px-6 lg:h-11 lg:px-7;
+  }
+}
