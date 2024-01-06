@@ -1,9 +1,13 @@
 {
   "name": "agency-landing-page",
   "private": true,
+  "scripts": {
+    "build:dev": "shx rm -rf ./dist; shx mkdir dist && shx cp -r ./src/* ./dist/ && npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css"
+  },
   "devDependencies": {
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.10",
+    "shx": "^0.3.4",
     "tailwindcss": "^3.4.0"
   }
 }
