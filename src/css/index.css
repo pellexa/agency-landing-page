@@ -4,14 +4,14 @@
 
 @layer components {
   .btn {
-    @apply bg-primary font-medium text-tertiary transition-colors hover:bg-primary/85 active:bg-primary/75 focus-visible:ring-2 outline-none;
+    @apply bg-primary text-tertiary hover:bg-primary/85 active:bg-primary/75 flex items-center justify-center text-sm font-medium outline-none transition-colors focus-visible:ring-2;
   }
 
   .btn-md {
-    @apply h-14 px-4;
+    @apply h-11 px-4;
   }
 
   .btn-sm {
-    @apply md:h-10 md:px-6 lg:h-[44px] lg:px-[26px];
+    @apply md:h-10 md:px-6 lg:h-11 lg:px-7;
   }
 }

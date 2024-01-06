@@ -11,12 +11,6 @@ module.exports = {
       sm: ['0.875rem', { lineHeight: '1.25rem', fontWeight: 400 }], // 14px/20
       base: ['1rem', { lineHeight: '1.5rem', fontWeight: 500 }], // 16px/24
       lg: ['1.125rem', { lineHeight: '2rem', fontWeight: 400 }], // 18px/32
-      xl: ['1.5rem', { lineHeight: '2rem', fontWeight: 400 }], // 24px/32
-      '2xl': ['2rem', { lineHeight: '2.5rem', fontWeight: 400 }], // 32px/40
-      '3xl': ['2rem', { lineHeight: '2.5rem', fontWeight: 700 }], // 32px/40
-      '4xl': ['3rem', { lineHeight: '6.25rem', fontWeight: 700 }], // 48px/100
-      '5xl': ['3.5rem', { lineHeight: '8.3125rem', fontWeight: 700 }], // 56px/133
-      '6xl': ['6rem', { lineHeight: '7.5rem', fontWeight: 700 }], // 96px/120
     },
     screens: {
       lg: '1440px', // => @media (min-width: 1440px) { ... } 2xl
@@ -36,12 +30,12 @@ module.exports = {
     plugin(function ({ addBase, theme }) {
       addBase({
         html: { fontSize: '16px' },
-        h1: { fontSize: theme('fontSize.6xl') },
-        h2: { fontSize: theme('fontSize.5xl') },
-        h3: { fontSize: theme('fontSize.4xl') },
-        h4: { fontSize: theme('fontSize.3xl') },
-        h5: { fontSize: theme('fontSize.2xl') },
-        h6: { fontSize: theme('fontSize.xl') },
+        h1: { fontSize: '6rem', lineHeight: '1rem', fontWeight: '700' },
+        h2: { fontSize: '3.5rem', lineHeight: '1rem', fontWeight: '700' },
+        h3: { fontSize: '3rem', lineHeight: '1rem', fontWeight: '700' },
+        h4: { fontSize: '2rem', lineHeight: '2.5rem', fontWeight: '700' },
+        h5: { fontSize: '2rem', lineHeight: '2.5rem', fontWeight: '400' },
+        h6: { fontSize: '1.5rem', lineHeight: '2rem', fontWeight: '400' },
       });
     }),
   ],
