@@ -1,7 +1,14 @@
 {
   "name": "agency-landing-page",
   "private": true,
+  "scripts": {
+    "start": "parcel ./src/index.html --open"
+  },
   "devDependencies": {
+    "parcel": "^2.11.0",
+    "postcss": "^8.4.33",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.10",
     "tailwindcss": "^3.4.0"
   }
 }

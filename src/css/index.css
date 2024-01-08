@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply flex items-center justify-center text-sm font-semibold outline-none transition-colors focus-visible:ring-2;
+  }
+
+  .btn-md {
+    @apply h-11 px-4;
+  }
+
+  .btn-sm {
+    @apply md:h-10 md:px-6 lg:h-11 lg:px-7;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-tertiary hover:bg-primary/85 active:bg-primary/75;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary/85 active:bg-secondary/75 text-white;
+  }
+
+  .nav-link {
+    @apply hover:bg-primary/85 active:bg-primary/75 px-4 py-1 transition-colors;
+  }
+}
